@@ -261,7 +261,7 @@ describe('createLogger – file logging', () => {
   let logFile: string;
 
   beforeEach(() => {
-    tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'logger-plus-test-'));
+    tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), '-test-'));
     logFile = path.join(tmpDir, 'sub', 'app.log');
   });
 
