@@ -1,8 +1,8 @@
-# smart-smart-logger-plus
+# smart-logger-plus
 
 > A simple, modern, and feature-rich logging utility for Node.js applications — with colors, timers, JSON mode, file logging, child loggers, and full TypeScript support.
 
-[![npm version](https://img.shields.io/npm/v/smart-smart-logger-plus.svg?style=flat-square)](https://www.npmjs.com/package/smart-smart-logger-plus)
+[![npm version](https://img.shields.io/npm/v/smart-logger-plus.svg?style=flat-square)](https://www.npmjs.com/package/smart-logger-plus)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![Node.js >=18](https://img.shields.io/badge/node-%3E%3D18-brightgreen?style=flat-square)](https://nodejs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?style=flat-square)](https://www.typescriptlang.org/)
