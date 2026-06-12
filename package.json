@@ -1,8 +1,9 @@
 {
-  "name": "logger-plus",
-  "version": "1.0.0",
+  "name": "smart-logger-plus",
+  "version": "1.1.0",
   "description": "A simple, modern, and feature-rich logging utility for Node.js applications",
   "keywords": [
+    "smart-logger",
     "logger",
     "logging",
     "typescript",
@@ -17,12 +18,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gauravkathiriya/logger-plus"
+    "url": "https://github.com/gauravkathiriya/smart-logger-plus"
   },
   "bugs": {
-    "url": "https://github.com/gauravkathiriya/logger-plus/issues"
+    "url": "https://github.com/gauravkathiriya/smart-logger-plus/issues"
   },
-  "homepage": "https://github.com/gauravkathiriya/logger-plus#readme",
+  "homepage": "https://github.com/gauravkathiriya/smart-logger-plus#readme",
   "type": "module",
   "main": "./dist/cjs/index.cjs",
   "module": "./dist/esm/index.js",
