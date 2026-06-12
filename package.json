@@ -1,0 +1,69 @@
+{
+  "name": "logger-plus",
+  "version": "1.0.0",
+  "description": "A simple, modern, and feature-rich logging utility for Node.js applications",
+  "keywords": [
+    "logger",
+    "logging",
+    "typescript",
+    "nodejs",
+    "colorful",
+    "json",
+    "file-logging",
+    "timer",
+    "child-logger"
+  ],
+  "author": "Gaurav Kathiriya",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gauravkathiriya/logger-plus"
+  },
+  "bugs": {
+    "url": "https://github.com/gauravkathiriya/logger-plus/issues"
+  },
+  "homepage": "https://github.com/gauravkathiriya/logger-plus#readme",
+  "type": "module",
+  "main": "./dist/cjs/index.cjs",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/types/index.d.ts",
+        "default": "./dist/esm/index.js"
+      },
+      "require": {
+        "types": "./dist/types/index.d.cts",
+        "default": "./dist/cjs/index.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "npm run build:esm && npm run build:cjs && npm run build:types",
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "build:cjs": "tsc -p tsconfig.cjs.json && node scripts/fix-cjs.mjs",
+    "build:types": "tsc -p tsconfig.types.json",
+    "dev": "tsc -p tsconfig.esm.json --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src --ext .ts",
+    "prepublishOnly": "npm run build && npm test",
+    "clean": "node -e \"const fs=require('fs');fs.rmSync('./dist',{recursive:true,force:true})\""
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "@vitest/coverage-v8": "^1.6.0",
+    "typescript": "^5.4.5",
+    "vitest": "^1.6.0"
+  }
+}
